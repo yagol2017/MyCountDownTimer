@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30px"
+    tools:context=".helper">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="欢迎使用本倒计时安卓APP\n本APP功能有："
+        android:textSize="80px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="自定义倒计时功能：在主界面点击“自定义”后，设置时间开始后即可"
+        android:textColor="#1500ff"
+        android:textSize="50px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="存储记录时间功能：在主界面点击“查看所有”后，可看到所有时间事件，你可以："
+        android:textColor="#00ffd0"
+        android:textSize="50px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="添加记录：添加自己的时间事件，输入标题和事件后确认即可\n返回：返回主界面\n单击任意时间事件：返回主界面，此时单击“开始”便会开始时间事件倒计时\n"
+        android:textColor="#ff0000"
+        android:textSize="40px" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="开始：开始倒计时功能"
+        android:textColor="#f700ff"
+        android:textSize="40px" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="暂停：暂停当前时间"
+        android:textColor="#f700ff"
+        android:textSize="40px" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="继续：继续倒计时"
+        android:textColor="#f700ff"
+        android:textSize="40px" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="结束：倒计时结束，时间重置为倒计时开始时"
+        android:textColor="#f700ff"
+        android:textSize="40px" />
+
+
+</LinearLayout>

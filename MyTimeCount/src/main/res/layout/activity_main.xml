@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/checkall"
+                android:text="查看所有" />
+
+            <Button
+                android:id="@+id/setyoutime"
+                android:onClick="alert_setyoutime"
+                android:text="自定义" />
+
+            <Button
+                android:id="@+id/setyoutime_picker"
+                android:onClick="setyoutime_picker"
+                android:text="自定义（数字选择器）" />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <TextView
+            android:id="@+id/welcome1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="30px"
+            android:text="欢迎使用本倒计时安卓APP"
+            android:textColor="#ff0000"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/welcome2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="30px"
+            android:text="具体操作说明请看“帮助”按钮"
+            android:textColor="#0008ff"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/welcome3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="30px"
+            android:text="目前设置时间为"
+            android:textColor="#ff008c"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/nowtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="30px"
+            android:text="00:00:00"
+            android:textColor="#009dc1"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/welcome4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="30px"
+            android:text="目前设置事件为"
+            android:textColor="#ff008c"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/nowtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="30px"
+            android:text="默认事件"
+            android:textColor="#009dc1"
+            android:textSize="60px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.mt.countdown.CountDownView
+            android:id="@+id/id_count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#c1ffa5"
+            android:onClick="start"
+            android:padding="20px"
+            android:text="开始" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffc69b"
+            android:onClick="pause"
+            android:padding="20px"
+            android:text="暂停" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80fff4"
+            android:onClick="goon"
+            android:padding="20px"
+            android:text="继续" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffb5f5"
+            android:onClick="stop"
+            android:padding="20px"
+            android:text="结束" />
+
+    </LinearLayout>
+</LinearLayout>
